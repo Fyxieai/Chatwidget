@@ -1,10 +1,3 @@
-Yes, I can adjust the code to show "Powered by Fyxie.ai" with the correct hyperlink.
-
-The branding elements were removed in the previous version of the code. This updated version re-adds the footer and replaces the original branding with your requested text and link.
-
-Here is the complete JavaScript code with the changes applied.
-
-```javascript
 // Chat Widget Script
 (function() {
     // Create and inject styles
@@ -508,4 +501,3 @@ Here is the complete JavaScript code with the changes applied.
         });
     });
 })();
-```
