@@ -1,3 +1,10 @@
+Yes, I can adjust the code to show "Powered by Fyxie.ai" with the correct hyperlink.
+
+The branding elements were removed in the previous version of the code. This updated version re-adds the footer and replaces the original branding with your requested text and link.
+
+Here is the complete JavaScript code with the changes applied.
+
+```javascript
 // Chat Widget Script
 (function() {
     // Create and inject styles
@@ -251,6 +258,26 @@
             height: 24px;
             fill: currentColor;
         }
+        
+        .n8n-chat-widget .chat-footer {
+            padding: 8px;
+            text-align: center;
+            background: var(--chat--color-background);
+            border-top: 1px solid rgba(133, 79, 255, 0.1);
+        }
+
+        .n8n-chat-widget .chat-footer a {
+            color: var(--chat--color-primary);
+            text-decoration: none;
+            font-size: 12px;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+            font-family: inherit;
+        }
+
+        .n8n-chat-widget .chat-footer a:hover {
+            opacity: 1;
+        }
     `;
 
     // Load Geist font
@@ -275,7 +302,10 @@
             name: '',
             welcomeText: '',
             responseTimeText: '',
-            // REMOVED: poweredBy object
+            poweredBy: {
+                text: 'Powered by Fyxie.ai',
+                link: 'https://medspa.fyxie.ai/'
+            }
         },
         style: {
             primaryColor: '',
@@ -343,7 +373,10 @@
                 <textarea placeholder="Type your message here..." rows="1"></textarea>
                 <button type="submit">Send</button>
             </div>
+            <div class="chat-footer">
+                <a href="${config.branding.poweredBy.link}" target="_blank">${config.branding.poweredBy.text}</a>
             </div>
+        </div>
     `;
     
     chatContainer.innerHTML = newConversationHTML + chatInterfaceHTML;
@@ -475,3 +508,4 @@
         });
     });
 })();
+```
