@@ -297,7 +297,7 @@
             responseTimeText: '',
             poweredBy: {
                 text: 'Powered by Fyxie.ai',
-                link: 'https://medspa.fyxie.ai/'
+                link: 'https:fyxie.ai/'
             }
         },
         style: {
@@ -501,3 +501,4 @@
         });
     });
 })();
+
