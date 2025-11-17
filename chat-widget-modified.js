@@ -297,7 +297,7 @@
             responseTimeText: '',
             poweredBy: {
                 text: 'Powered by Fyxie.ai',
-                link: 'https:fyxie.ai/'
+                link: 'https://www.fyxie.ai/'
             }
         },
         style: {
@@ -501,4 +501,5 @@
         });
     });
 })();
+
 
